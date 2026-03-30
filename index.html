@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>TikTok Login</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins', sans-serif;
+}
+
+body{
+background:#000;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+color:white;
+}
+
+/* Container */
+.container{
+background:#121212;
+padding:40px;
+border-radius:12px;
+width:340px;
+text-align:center;
+box-shadow:0 0 25px rgba(255,255,255,0.08);
+animation:fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+from{opacity:0; transform:translateY(20px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+/* Logo */
+.logo{
+font-size:32px;
+font-weight:700;
+margin-bottom:20px;
+}
+
+.logo span{
+color:#fe2c55;
+}
+
+/* Input */
+.input-box{
+margin:12px 0;
+}
+
+.input-box input{
+width:100%;
+padding:12px;
+border:none;
+border-radius:6px;
+background:#2a2a2a;
+color:white;
+outline:none;
+transition:0.3s;
+}
+
+.input-box input:focus{
+background:#333;
+}
+
+/* Button */
+button{
+width:100%;
+padding:12px;
+margin-top:10px;
+background:#fe2c55;
+border:none;
+border-radius:6px;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#ff4b6e;
+transform:scale(1.05);
+}
+
+/* Extra */
+.text{
+font-size:12px;
+margin-top:10px;
+color:#aaa;
+}
+
+.signup{
+margin-top:15px;
+font-size:13px;
+}
+
+.signup a{
+color:#fe2c55;
+text-decoration:none;
+}
+
+/* Footer wajib */
+.footer{
+margin-top:15px;
+font-size:12px;
+color:red;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo">
+Tik<span>Tok</span>
+</div>
+
+<form>
+
+<div class="input-box">
+<input type="text" placeholder="Email atau Username" required>
+</div>
+
+<div class="input-box">
+<input type="password" placeholder="Password" required>
+</div>
+
+<button type="submit">Log in</button>
+
+</form>
+
+<div class="text">Lupa password?</div>
+
+<div class="signup">
+Belum punya akun? <a href="#">Daftar</a>
+</div>
+
+<div class="footer">
+Halaman ini adalah simulasi edukasi keamanan cyber.  
+Perhatikan URL sebelum memasukkan data sensitif!
+</div>
+
+</div>
+
+</body>
+</html>
